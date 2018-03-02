@@ -1,0 +1,13 @@
+// About variable addr and pointer addr
+Look at this example:
+    int n = 324;
+    int *ptr = &n;
+Here ptr and &n evaluates to same addrs:
+    code:
+        printf("%p %p\n", &n, ptr);
+    output:
+        0x7ffc1df59ef4 0x7ffc1df59ef4 ; Ofcourse it might be different in yours case ; Here, ptr == &n evaluates to true
+I can put it this way:
+    ptr = variable n's addr, basically spits away n's addr
+    &ptr = It is ptr pointer's own addr, spits ptr's addr
+    
